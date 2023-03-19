@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Novice</title>
+</head>
+<body>
+    <h1 id="caption">Новачок</h1>
+    <div class="certificate">
+        <div class="picture">
+            <img src="../images/Novice.png" alt="picture of Novice">
+        </div>
+        <p class="about">
+            Новачки дуже переживають за свою успішність; їх досвіду замало, щоб повести їх у правильному 
+            напрямку і вони не знають чи їх вчинки будуть правильними. Новачки зазвичай не хочуть вчитися,
+             зате хочуть досягти миттєвого результату. Вони не знають як реагувати на помилки і тому легко 
+             збиваються з пантелику, коли щось іде “не так”. Зате вони можуть бути досить ефективними, 
+             коли їм дати набір контекстно незалежних правил у формі “у випадку ХХХ, роби УУУ”. Іншими 
+             словами їм необхідний рецепт або алгоритм.
+        </p>
+    </div>
+    <form>
+        <h2>Анкета для користувача</h2>
+      
+        <div class="question">
+          <h3>Питання 1: Переживаєте за успіх в роботі?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q1" value="5">
+              Сильно
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="3">
+              Не дуже
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="2">
+              Спокійний
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 2: Прагнете досягти швидко результату?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q2" value="2">
+              Поступово
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="3">
+              Якомога швидше
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="5">
+              Дуже
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 3: Легко попадаєте в тупик при проблемах в роботі?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q3" value="5">
+              Неодмінно
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="3">
+              Поступово
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="2">
+              Зрідка
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 4: Чи потрібен чіткий алгоритм для вирішення задач?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q4" value="5">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q4" value="3">
+              В окремих випадках
+            </label>
+      
+            <label>
+              <input type="radio" name="q4" value="2">
+              Не потрібен
+            </label>
+          </div>
+        </div>
+      
+        <div class="buttons">
+            <a class="next" href="../MainPage/MainPage.html">Назад</a>
+            <button id="send" class="submit" onclick="buildChart(), calculateScore()">Відправити</button>
+            <a class="next" href="../Second block of questions/SecondBlock.html">Далі</a>
+        </div>
+      </form>
+      <canvas class="hist" id="myChart"></canvas>
+      <button id="fourthButton" class="submit" onclick="location.reload()">Спочатку</button>
+      <!-- <script src="FirstBlock.js"></script> -->
+      <script src="../script.js"></script>
+      <script src="../Customer.js"></script>
+</body>
+</html>
+

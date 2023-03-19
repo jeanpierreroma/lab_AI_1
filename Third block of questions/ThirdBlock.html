@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Advanced begginer</title>
+</head>
+<body>
+    <h1 id="caption">Компетентний</h1>
+    <div class="certificate">
+        <div class="picture">
+            <img src="../images/Competent.png" alt="picture of Competent">
+        </div>
+        <p class="about">
+          Компетентні будують правильні моделі проблемної області та ефективно нею користуються. Здатні усувати проблеми з якими раніше не стикались. Про людей на цьому рівні часто кажуть, що вони “мають ініціативу”. Вони можуть вчити новачків і не задовбують експертів. Щоправда їм ще бракує досвіду аби вдало розставити пріоритети при рішенні задач. Власне кажучи, саме з цього рівня людину можна вже назвати інженером – компетентні вирішують задачі, а не працюють за алгоритмом.
+        </p>
+    </div>
+    <form>
+        <h2>Анкета для користувача</h2>
+      
+        <div class="question">
+          <h3>Питання 1: Чи можете ви побудувати модель вирішуваної задачі?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q1" value="5">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="3">
+              Не повністю
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="2">
+              В окремих випадках
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 2: Чи вистачає вам ініціативи при вирішенні задач?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q2" value="5">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="3">
+              Зрідка
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="2">
+              Потрібне натхнення
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 3: Чи можете вирішувати проблеми з якими ще не стикались?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q3" value="2">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="3">
+              В окремих випадках
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="5">
+              Ні
+            </label>
+          </div>
+        </div>
+      
+        <div class="buttons">
+            <a class="next" href="../Second block of questions/SecondBlock.html">Назад</a>
+            <button id="send" class="submit" onclick="buildChart(), calculateScore()">Відправити</button>
+            <a class="next" href="../Fourth block of questions/FourthBlock.html">Далі</a>
+        </div>
+      </form>
+      <canvas class="hist" id="myChart"></canvas>
+      <button id="fourthButton" class="submit" onclick="location.reload()">Спочатку</button>
+      <script src="ThirdBlock.js"></script>
+      <script src="../script.js"></script>
+      <script src="../Customer.js"></script>
+</body>
+</html>
+

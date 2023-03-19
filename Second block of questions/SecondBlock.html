@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Advanced begginer</title>
+</head>
+<body>
+    <h1 id="caption">Твердий початківець</h1>
+    <div class="certificate">
+        <div class="picture">
+            <img src="../images/Advanced begginer.png" alt="picture of Advanced begginer">
+        </div>
+        <p class="about">
+        Тверді початківці починають вже потроху відступати від фіксованих правил. Вони можуть спробувати якісь задачі самостійно, але у них все ще є труднощі із усуненням проблем, які виникають. Початківці можуть скористатись порадами в правильному контексті, врахувавши свій досвід подібних ситуацій, але ледь-ледь. І хоч вони вже починають формулювати якісь загальні принципи, вони все ще не бачать “всієї картини”. Якщо спробувати надати їм ширший контекст – вони відмахнуться від нього як від недоречного. 
+        </p>
+    </div>
+    <form>
+        <h2>Анкета для користувача</h2>
+      
+        <div class="question">
+          <h3>Питання 1: Чи використовуєте власний досвід при вирішенні задач?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q1" value="5">
+              Зрідка
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="3">
+              Частково
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="2">
+              Ні
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 2: Чи користуєтесь фіксованими правилами при вирішенні задач?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q2" value="2">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="3">
+              В окремих випадках
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="5">
+              Не потрібні
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 3: Чи відчуваєте ви загальний контекст вирішення задачі?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q3" value="2">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="3">
+              Частково
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="5">
+              В окремих випадках
+            </label>
+          </div>
+        </div>
+      
+        <div class="buttons">
+            <a class="next" href="../First block of questions/FirstBlock.html">Назад</a>
+            <button id="send" class="submit" onclick="buildChart(), calculateScore()">Відправити</button>
+            <a class="next" href="../Third block of questions/ThirdBlock.html">Далі</a>
+        </div>
+      </form>
+      <canvas class="hist" id="myChart"></canvas>
+      <button id="fourthButton" class="submit" onclick="location.reload()">Спочатку</button>
+      <script src="SecondBlock.js"></script>
+      <script src="../script.js"></script>
+      <script src="../Customer.js"></script>
+</body>
+</html>
+

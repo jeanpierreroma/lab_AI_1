@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Proficient</title>
+</head>
+<body>
+    <h1 id="caption">Досвідчений</h1>
+    <div class="certificate">
+        <div class="picture">
+            <img src="../images/Proficient.png" alt="picture of Proficient">
+        </div>
+        <p class="about">
+          Досвідченим необхідна “повна картина” проблемної області, адже вони хочуть розуміти весь концепт. Вони роблять значний прорив в рамках моделі братів Дрейфус, адже постійно оцінюють виконану роботу і переглядають свої підходи, аби наступного разу бути ще ефективнішими. Вони також можуть навчатись використовуючи чужий досвід. І найголовніше – вони завжди беруть до уваги контекст задачі. Якщо повернутись до програмування, то чудовий приклад ілюстрації – це використання патернів проектування. Лише досвідчені використовують їх виключно там де треба, а не бездумно і повсюдно, бо це круто і модно.
+        </p>
+    </div>
+    <form>
+        <h2>Анкета для користувача</h2>
+      
+        <div class="question">
+          <h3>Питання 1: Чи необхідний вам весь контекст задачі?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q1" value="5">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="3">
+              В окремих деталях
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="2">
+              В загальному
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 2: Чи переглядаєте ви свої наміри до вирішення задачі?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q2" value="5">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="3">
+              Зрідка
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="2">
+              Коли є потреба
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 3: Чи здатні ви навчатись у інших?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q3" value="5">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="3">
+              Зрідка
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="2">
+              Коли є потреба
+            </label>
+          </div>
+        </div>
+      
+        <div class="buttons">
+            <a class="next" href="../Third block of questions/ThirdBlock.html">Назад</a>
+            <button id="send" class="submit" onclick="buildChart(), calculateScore()">Відправити</button>
+            <a class="next" href="../Fifth block of questions/FifthBlock.html">Далі</a>
+        </div>
+      </form>
+      <canvas class="hist" id="myChart"></canvas>
+      <button id="fourthButton" class="submit" onclick="location.reload()">Спочатку</button>
+      <script src="FourthBlock.js"></script>
+      <script src="../script.js"></script>
+      <script src="../Customer.js"></script>
+</body>
+</html>
+

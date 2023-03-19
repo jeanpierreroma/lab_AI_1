@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Expert</title>
+</head>
+<body>
+    <h1 id="caption">Експерт</h1>
+    <div class="certificate">
+        <div class="picture">
+            <img src="../images/Expert.png" alt="picture of Expert">
+        </div>
+        <p class="about">
+          Експерти – основне джерело знань та інформації в будь-якій сфері. Вони безперестану шукають все кращі і кращі методи роботи. Вони завжди застосовують весь свій велетенський багаж знань у правильному контексті. Вони пишуть книжки, статті та проводять семінари. Це сучасні чаклуни. Експерти керуються інтуїцією . Доктор Хаус, який з одного погляду на пацієнта (або взагалі на його медичну картку) міг поставити діагноз – типовий приклад експерта. Експерти працюють за допомогою несвідомого “порівняння з взірцем” (“pattern matching”) у базі свого досвіду. От тільки проблема в тому, що функція “порівняння з взірцем” асинхронна і знаходиться в частині мозку, яка не підконтрольна свідомості.
+        </p>
+    </div>
+    <form>
+        <h2>Анкета для користувача</h2>
+      
+        <div class="question">
+          <h3>Питання 1: Чи обираєте ви нові методи своєї роботи?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q1" value="5">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="3">
+              Вибірково
+            </label>
+      
+            <label>
+              <input type="radio" name="q1" value="2">
+              Вистачає досвіду
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 2: Чи допомагає власна інтуїція при вирішенні задач?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q2" value="5">
+              Так
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="3">
+              Частково
+            </label>
+      
+            <label>
+              <input type="radio" name="q2" value="2">
+              При емоційному напруженні
+            </label>
+          </div>
+        </div>
+      
+        <div class="question">
+          <h3>Питання 3: Чи застосовуєте рішення задач за аналогією?</h3>
+      
+          <div class="options">
+            <label>
+              <input type="radio" name="q3" value="5">
+              Часто
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="3">
+              Зрідка
+            </label>
+      
+            <label>
+              <input type="radio" name="q3" value="2">
+              Тільки власний варіант
+            </label>
+          </div>
+        </div>
+      
+        <div class="buttons">
+            <a class="next" href="../Fourth block of questions/FourthBlock.html">Назад</a>
+            <button id="send" class="submit" onclick="buildChart(), calculateScore()">Відправити</button>
+            <a class="next" href="../Result/Result.html">Результати</a>
+        </div>
+      </form>
+      <canvas class="hist" id="myChart"></canvas>
+      <button id="fourthButton" class="submit" onclick="location.reload()">Спочатку</button>
+      <script src="FifthBlock.js"></script>
+      <script src="../script.js"></script>
+      <script src="../Customer.js"></script>
+</body>
+</html>
+
